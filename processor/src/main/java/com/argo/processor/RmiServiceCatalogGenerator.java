@@ -32,8 +32,8 @@ public class RmiServiceCatalogGenerator {
 
     /**
      *
-     * @param annotations
-     * @param roundEnv
+     * @param annotations 支持的注解
+     * @param roundEnv 编译环境
      */
     public void process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv) {
         Set elements = roundEnv.getElementsAnnotatedWith(RmiService.class);
@@ -51,7 +51,7 @@ public class RmiServiceCatalogGenerator {
 
     /**
      *
-     * @throws IOException
+     * @throws IOException 抛出IOException
      */
     public void writeFile() throws IOException {
         Filer filer = processingEnvironment.getFiler();

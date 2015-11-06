@@ -19,7 +19,7 @@ public @interface ApiParameterDoc {
 
     /**
      * 参数是否是必须的
-     * @return
+     * @return boolean
      */
     boolean required() default false;
 }
