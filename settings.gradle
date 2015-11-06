@@ -1,0 +1,4 @@
+rootProject.name = 'argo-annotation'
+include 'annotations'
+include 'processor'
+
